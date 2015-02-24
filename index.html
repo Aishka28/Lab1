@@ -1,43 +1,130 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Lab1 by Aishka28</title>
+ <head>
+  <title>canvas</title>
+  <meta charset="utf-8">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Lab1</h1>
-        <p>моя лабораторная</p>
-        <p class="view"><a href="https://github.com/Aishka28/Lab1">View the Project on GitHub <small>Aishka28/Lab1</small></a></p>
-        <ul>
-          <li><a href="https://github.com/Aishka28/Lab1/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/Aishka28/Lab1/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/Aishka28/Lab1">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<body>
+<em> <h2> Аюпова А.А  </H2>
 
-<p>Aisha</p>
-      </section>
-    </div>
-    <footer>
-      <p>Project maintained by <a href="https://github.com/Aishka28">Aishka28</a></p>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+<h2> Вариант-2 </h2>
+ </em>
+</body>
+
+  <canvas id="gusen" width="800" height="800">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
+
+<script type="text/javascript">
+    var myCanvas = document.getElementById('gusen');
+     var cxt = myCanvas.getContext('2d');
+ // Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(600,200,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(600,300,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(600,400,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(600,500,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(500,500,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(400,500,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(300,500,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем левый глаз 
+     cxt.fillStyle = "#000000";
+     cxt.beginPath();
+     cxt.arc(580,185,8,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем правый глаз 
+     cxt.fillStyle="#000000";
+     cxt.beginPath();
+     cxt.arc(620,185,8,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем нос
+     cxt.strokeStyle = '#000000';
+     cxt.lineWidth = 3;
+     cxt.beginPath();
+     cxt.moveTo(597, 205);
+     cxt.quadraticCurveTo(600, 205, 607, 205);
+     cxt.stroke();
+// Рисуем рот
+     cxt.strokeStyle = '#FA8072';
+     cxt.lineWidth = 3;
+     cxt.beginPath();
+     cxt.moveTo(580, 220);
+     cxt.quadraticCurveTo(605, 240, 620, 220);
+     cxt.stroke();
+// Рисуем лев.усик
+     cxt.strokeStyle = '#000000';
+     cxt.lineWidth = 3;
+     cxt.beginPath();
+     cxt.moveTo(600,150);
+     
+     cxt.lineTo(640,100);
+     cxt.stroke();
+cxt.strokeStyle = '#000000';
+     cxt.lineWidth = 3;
+     cxt.beginPath();
+     cxt.moveTo(600,150);
+     
+    cxt.lineTo(560,100);
+     cxt.stroke();
+// красим
+      cxt.fillStyle = '#000000';
+      cxt.fill();
+      cxt.lineWidth = 1;
+      cxt.strokeStyle = 'black';
+      cxt.stroke();
+  </script>
+ </head>
+ <body>
 </html>
